@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Arsène</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body data-barba="wrapper">
-    <header>
-        <h1 class="logo">A R S È N E</h1>
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="mobile-nav" id="mobile-nav">
-            <ul>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
     
-    <main data-barba="container" data-barba-namespace="home" data-scroll-container>
-        <section id="hero" class="fullscreen">
-            <h2 class="headline">Shaping Ideas, Elevating Visions.</h2>
-        </section>
-        <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Arsène</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
-</head>
-<body data-barba="wrapper">
+    <!-- css -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/wavify@1.0.0/wavify.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  </head>
+  <body>
+
+    <!-- HEADER -->
     <header>
-        <h1 class="logo">A R S È N E</h1>
-        <div class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="mobile-nav" id="mobile-nav">
-            <ul>
-                <li><a href="#work" class="nav-link">Work</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+      <h1 class="logo">A R S È N E</h1>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <ul>
+          <li><a href="#hero">Accueil</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="about" class="about-container">
+    <main>
+
+        <!-- LANDING -->
+      <section id="hero" class="fullscreen">
+        <h2 class="headline scroll-item">Shaping Ideas, Elevating Visions.</h2>
+      </section>
+
+        <!-- ABOUT -->
+      <svg id="svg" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <defs></defs>
+        <path id="wave" d=""/>
+      </svg>
+      
+      <section id="about" class="about-container">
         <div class="about-wrapper">
-            <div class="about-image">
-                <img src="./moirennes.jpg.JPEG" alt="Moi en action" class="about-item">
-            </div>
-            <div class="about-content">
-                <h2 class="about-item">À propos de moi</h2>
-                <p class="about-item">
-                    Passionné par l’image, le son et le web, j’ai un parcours mêlant communication numérique et production audiovisuelle. Après un BTS NDRC, j’ai poursuivi en DUT Infocom – Information Numérique dans les Organisations, développant ainsi mes compétences en création digitale et gestion de l’information.
-
-Actuellement trésorier d’une association de production cinématographique, j’ai eu l’opportunité de réaliser un court-métrage et un documentaire. Bien que ces projets soient encore amateurs, ils ont suffi à éveiller ma passion pour la création audiovisuelle et m’ont poussé à explorer davantage la narration par l’image et le son.
-
-En parallèle, <bold> la musique tient une place essentielle </bold> dans mon univers. Guitariste et batteur, j’aime aussi composer et produire en MAO avec FL Studio, cherchant toujours à expérimenter et fusionner les disciplines artistiques.
-                </p>
-            </div>
+          <div class="about-image">
+            <img
+              src="./moirennes.jpg.JPEG"
+              alt="Moi en action"
+              class="about-item"
+            />
+          </div>
+          <div class="about-content">
+            <h2 class="about-item">À propos de moi</h2>
+            <p class="about-item">
+              Passionné par l’image, le son et le web, j’ai un parcours mêlant
+              communication numérique et production audiovisuelle. Après un BTS
+              NDRC, j’ai poursuivi en DUT Infocom – Information Numérique dans
+              les Organisations, développant ainsi mes compétences en création
+              digitale et gestion de l’information. Actuellement trésorier d’une
+              association de production cinématographique, j’ai eu l’opportunité
+              de réaliser un court-métrage et un documentaire. Bien que ces
+              projets soient encore amateurs, ils ont suffi à éveiller ma
+              passion pour la création audiovisuelle et m’ont poussé à explorer
+              davantage la narration par l’image et le son. En parallèle, la
+              musique tient une place essentielle dans mon univers. Guitariste
+              et batteur, j’aime aussi composer et produire en MAO avec FL
+              Studio, cherchant toujours à expérimenter et fusionner les
+              disciplines artistiques.
+            </p>
+          </div>
         </div>
-    </section>
+      </section>
 
-    
-    <section id="Work">
-        <p pos> Work in progress </p>    
-    </section>
-    
-    
-        
-        
-        <section id="about" class="text-center">
-            <h2>About Me</h2>
-            <p>Creative developer and designer focused on innovative web experiences, blending technology and art.</p>
-        </section>
-        
-        <section id="contact" class="text-center">
-            <h2>Let’s Work Together</h2>
-            <a href="mailto:arsene.bdn@gmail.com" class="contact-btn">Get in Touch</a>
-        </section>
+        <!-- WORK -->
+      <section id="Work">
+        <p>Work in progress</p>
+      </section>
+
+      <section id="about" class="text-center">
+        <h2>About Me</h2>
+        <p>
+          Creative developer and designer focused on innovative web experiences,
+          blending technology and art.
+        </p>
+      </section>
+
+      <section id="contact" class="text-center">
+        <h2>Let’s Work Together</h2>
+        <a href="mailto:arsene.bdn@gmail.com" class="contact-btn"
+          >Get in Touch</a
+        >
+      </section>
     </main>
-    
-    <script src="script.js"></script>
-</body>
+
+
+
+    <script src="script.js" defer></script>
+  </body>
 </html>
